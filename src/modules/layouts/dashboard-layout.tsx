@@ -9,7 +9,7 @@ const DashboardLayout = ({ children }: LayoutPropsMain) => {
       <HeaderDashboard />
       <div className="flex w-full overflow-y-auto">
         <DashboardSidebar />
-        {children}
+        <main className="w-full pt-16">{children}</main>
       </div>
     </SidebarProvider>
   );
