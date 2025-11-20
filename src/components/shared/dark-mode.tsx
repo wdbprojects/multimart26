@@ -36,7 +36,7 @@ const DarkMode = ({ className }: { className?: string }) => {
         <span className="peer-data-[state=checked]:text-muted-foreground pointer-events-none relative ms-0.5 flex min-w-8 items-center justify-center text-center">
           <MoonIcon size={16} aria-hidden="true" />
         </span>
-        <span className="text-background peer-data-[state=unchecked]:text-muted-foreground/90 pointer-events-none relative me-0.5 flex min-w-8 items-center justify-center text-center">
+        <span className="text-muted-foreground peer-data-[state=unchecked]:text-muted-foreground/90 pointer-events-none relative me-0.5 flex min-w-8 items-center justify-center text-center">
           <SunIcon size={16} aria-hidden="true" />
         </span>
       </div>

@@ -58,9 +58,9 @@ const LoginForm = () => {
     <div className="flex w-full flex-col gap-4 sm:w-sm">
       <Card className="gap-3 p-2 py-6">
         <CardHeader className="mb-0 text-center">
-          <CardTitle className="text-xl">Create an account</CardTitle>
+          <CardTitle className="text-xl">Login to your account</CardTitle>
           <CardDescription>
-            Enter your email below to create your account
+            Enter your email below to login to your account
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -138,7 +138,7 @@ const LoginForm = () => {
                 ) : (
                   <div className="flex flex-row items-center justify-center gap-2">
                     <LogIn className="size-3.5" />
-                    <span>Register</span>
+                    <span>Login</span>
                   </div>
                 )}
               </Button>

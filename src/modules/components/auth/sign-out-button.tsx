@@ -31,7 +31,7 @@ const SignOutButton = () => {
 
   return (
     <Button
-      variant="secondary"
+      variant="destructive"
       size="sm"
       className="w-[150px]"
       onClick={handleLogout}

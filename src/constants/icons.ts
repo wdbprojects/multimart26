@@ -1,0 +1,36 @@
+import {
+  BoxesIcon,
+  BoxListIcon,
+  CategoriesIcon,
+  CouponIcon,
+  CreateStoreIcon,
+  DashboardIcon,
+  InventoryIcon,
+  OfferIcon,
+  ProductsIcon,
+  SettingsIcon,
+  ShippingIcon,
+  StoreIcon,
+  ThreeBoxesIcon,
+} from "@/components/shared/icons";
+
+export const icons = [
+  { id: 1, label: "Boxes", value: "boxes", path: BoxesIcon },
+  { id: 2, label: "Orders", value: "orders", path: BoxListIcon },
+  { id: 3, label: "Categories", value: "categories", path: CategoriesIcon },
+  { id: 4, label: "Coupon", value: "coupon", path: CouponIcon },
+  {
+    id: 5,
+    label: "Create Store",
+    value: "create-store",
+    path: CreateStoreIcon,
+  },
+  { id: 6, label: "Dashboard", value: "dashboard", path: DashboardIcon },
+  { id: 7, label: "Inventory", value: "inventory", path: InventoryIcon },
+  { id: 8, label: "Offer", value: "offer", path: OfferIcon },
+  { id: 9, label: "Products", value: "products", path: ProductsIcon },
+  { id: 10, label: "Settings", value: "settings", path: SettingsIcon },
+  { id: 11, label: "Shipping", value: "shipping", path: ShippingIcon },
+  { id: 12, label: "Stores", value: "stores", path: StoreIcon },
+  { id: 13, label: "Three Boxes", value: "three-boxes", path: ThreeBoxesIcon },
+];

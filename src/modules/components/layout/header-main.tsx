@@ -5,9 +5,12 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Link from "next/link";
 import SignOutButton from "../auth/sign-out-button";
+import { Badge } from "@/components/ui/badge";
+import DashboardLinks from "@/modules/components/dashboard/dashboard-links";
 
 const HeaderMain = async () => {
   const session = await auth.api.getSession({ headers: await headers() });
+
   return (
     <header className="bg-background fixed top-0 right-0 z-50 flex h-16 w-full items-center justify-between border-b px-2 py-2">
       <div className="container mx-auto flex w-full items-center justify-between gap-1 sm:gap-2">
@@ -22,12 +25,15 @@ const HeaderMain = async () => {
             </h6>
           </Link>
         </div>
+        {session && (
+          <div className="flex flex-1 items-center justify-end gap-2">
+            <span className="text-xs">Signed in as:</span>
+            <Badge variant="default">{session?.user.role}</Badge>
+          </div>
+        )}
         {/* //INFO: BUTTONS & AUTH */}
         <div className="flex shrink-0 items-center gap-4 p-1">
-          <DarkMode />
-          <Button variant="outline" size="sm" asChild>
-            <Link href={routes.dashboard}>Dashboard</Link>
-          </Button>
+          <DashboardLinks />
           {!session ? (
             <Button variant="secondary" size="sm" asChild>
               <Link href={routes.login}>Login</Link>
@@ -35,6 +41,7 @@ const HeaderMain = async () => {
           ) : (
             <SignOutButton />
           )}
+          <DarkMode />
         </div>
       </div>
     </header>
