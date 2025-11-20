@@ -3,11 +3,11 @@ import { auth } from "./auth";
 import { routes } from "@/config/routes";
 import { redirect } from "next/navigation";
 
-export const requireAuth = async () => {
+export const requireAuth = async (role: string) => {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
-  if (!session) {
+  if (!session || session.user.role !== role) {
     redirect(routes.login);
   }
   return session;
