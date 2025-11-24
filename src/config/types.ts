@@ -1,3 +1,4 @@
+import { Category } from "@/generated/prisma/client";
 import { User } from "better-auth";
 import { ReactNode } from "react";
 
@@ -15,4 +16,8 @@ export interface IDashboardSidebarMenu {
   label: string;
   icon: string;
   url: string;
+}
+
+export interface CategoryDetailsProps {
+  data?: Category;
 }

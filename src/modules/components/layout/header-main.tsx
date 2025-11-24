@@ -6,7 +6,7 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import SignOutButton from "../auth/sign-out-button";
 import { Badge } from "@/components/ui/badge";
-import DashboardLinks from "@/modules/components/dashboard/dashboard-links";
+import DashboardLinks from "@/modules/components/dashboard/shared/dashboard-links";
 
 const HeaderMain = async () => {
   const session = await auth.api.getSession({ headers: await headers() });
