@@ -5,9 +5,9 @@ import {
   SidebarHeader,
 } from "@/components/ui/sidebar";
 import { SidebarProps } from "@/config/types";
-import UserInfo from "@/modules/components/dashboard/user-info";
-import NavAdmin from "@/modules/components/dashboard/nav-admin";
-import SidebarSearchForm from "../components/dashboard/sidebar-search-form";
+import UserInfo from "@/modules/components/dashboard/shared/user-info";
+import NavAdmin from "@/modules/components/dashboard/shared/nav-admin";
+import SidebarSearchForm from "../components/dashboard/forms/sidebar-search-form";
 
 const DashboardSidebar: FC<SidebarProps> = async ({ role, user }) => {
   return (

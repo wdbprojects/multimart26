@@ -7,4 +7,5 @@ export const routes = {
   login: "/auth/login",
   register: "/auth/register",
   products: "/products",
+  newCategory: "/dashboard/admin/categories/new",
 };

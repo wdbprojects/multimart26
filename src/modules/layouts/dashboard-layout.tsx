@@ -16,7 +16,7 @@ const DashboardLayout = async ({ children }: LayoutPropsMain) => {
       <HeaderDashboard />
       <div className="flex w-full overflow-y-auto">
         <DashboardSidebar role={role} user={session?.user} />
-        <main className="w-full pt-16">{children}</main>
+        <main className="w-full pt-14">{children}</main>
       </div>
     </SidebarProvider>
   );

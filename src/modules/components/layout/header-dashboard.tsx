@@ -5,9 +5,9 @@ import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Link from "next/link";
 import SignOutButton from "@/modules/components/auth/sign-out-button";
-import DashboardLinks from "../dashboard/dashboard-links";
+import DashboardLinks from "../dashboard/shared/dashboard-links";
 import { Badge } from "@/components/ui/badge";
-import SidebarTriggerCustom from "@/modules/components/dashboard/sidebar-trigger-custom";
+import SidebarTriggerCustom from "@/modules/components/dashboard/shared/sidebar-trigger-custom";
 
 const HeaderDashboard = async () => {
   const session = await auth.api.getSession({ headers: await headers() });
